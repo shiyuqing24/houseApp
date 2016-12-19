@@ -1,0 +1,101 @@
+* {
+  outline: none /*outline-style 属性用于设置元素的整个轮廓的样式,none定义无轮廓*/;
+}
+body {
+  background-color: #efefef;
+  font-family: SimHei;
+}
+.header {
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+}
+.icon-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("../../image/login/nav_back_icon@2x.png") no-repeat center 16px;
+  line-height: 20px;
+  background-size: 10px 16px;
+}
+.header-title {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  color: #ed692b;
+}
+.form-list {
+  height: 80px;
+  background-color: #fff;
+  margin-top: 15px;
+  padding-right: 15px;
+}
+.form-list .form-cell {
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+.form-list .form-cell .cell-name {
+  display: inline-block;
+  width: 50px;
+  padding-left: 40px;
+  background: url("../../image/login/content_ID_icon@2x.png") no-repeat left 10px center;
+  background-size: 25% 50%;
+}
+.form-list .form-cell .cell-passwd {
+  padding-left: 40px;
+  background: url("../../image/login/content_password_icon@2x.png") no-repeat left 12px center;
+  background-size: 16px 50%;
+}
+.form-list .form-cell-input {
+  flex: 1;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form-list:after {
+  content: '';
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 90%;
+  background-color: #efefef;
+}
+.bt_box {
+  display: -webkit-box;
+  display: flex-box;
+  display: flex;
+  display: box;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+.bt_box .bt_login {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7c7c7;
+  color: #fff;
+  line-height: 40px;
+  font-size: 1.1rem;
+}
+.bt_box .bt_reg {
+  padding-left: 10px;
+  color: #ed692b;
+  flex: 1;
+}
+.bt_box .bt_passwd {
+  flex: 1;
+  padding-right: 10px;
+  color: #7a7a7a;
+  text-align: right;
+}

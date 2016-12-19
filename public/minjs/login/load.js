@@ -1,0 +1,1 @@
+function checkNul(e){var l=e.id+"_tips",n=document.getElementById(l);return""==e.value?(n.style.display="inline-block",!1):(n.style.display="none",!0)}

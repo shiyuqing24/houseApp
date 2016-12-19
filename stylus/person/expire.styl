@@ -1,0 +1,93 @@
+$orange=#EA5404
+body
+  background-color #efefef
+  margin 0px
+  padding 0px
+  font-family SimHei
+.header
+  height 35px
+  line-height 35px
+  background-color #FFFFFF
+  text-align center
+  position relative
+  border none
+  &:after
+    content ''
+    position absolute
+    top 35px
+    left 0px
+    z-index 5
+    display block
+    height 1px
+    width 100%
+    background-color #DFE0E4
+  .icon-back
+    width 28px
+    height 28px
+    background url("../../image/person/nav_icon_back@2x.png") no-repeat 10px center
+    background-size 10px
+    position absolute
+    top 5px
+    left 0px
+    display inline-block
+    line-height 20px
+  .header_title
+    font-size 18px
+.block_box
+  height 100px
+  padding 15px
+  background-color #FFFFFF
+  margin-top 10px
+  position relative
+  .img_box
+    width 256px
+    height 180px
+    background url("../../image/index/content_img_list@2x.png") no-repeat  left center
+    background-size 128px 100px
+    position absolute
+    top -30px
+  .info_box
+    padding-left 150px
+    position relative
+    .info-title
+      color #323232
+      margin-bottom 3px
+      .title_left
+        font-size 18px
+      .title_right
+        position absolute
+        right 0px
+        font-size 0.8rem
+        color #9f9f9f
+        top 2px
+
+    .info-address
+      font-size 16px
+      color #9f9f9f
+      margin-bottom 3px
+    .info-tag_box
+      width 70px
+      height 25px
+      border 1px solid $orange
+      border-radius 5px
+      text-align center
+      .t_b_t
+        font-size 0.8rem
+        color $orange
+        text-align center
+        line-height 25px
+    .info-price
+      font-size 14px
+      margin-top 8px
+      position relative
+      .price_left
+        color #9f9f9f
+        em
+          font-style normal
+          color $orange
+          padding-right 5px
+      .price_right
+        position absolute
+        right -5px
+        color #9f9f9f
+        top 1px

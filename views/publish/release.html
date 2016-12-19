@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发布房源</title>
+    <link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../public/css/publish/release.css">
+</head>
+<body>
+<header class="header">
+    <span class="icon-back">取消</span>
+    <span class="header-title">发布房源</span>
+</header>
+<div class="search_box">
+    <div class="search_left">
+        <input type="text" placeholder="搜索想要发布的大厦" class="search_inp">
+    </div>
+    <div class="search_right">
+        <span class="search_title">新增楼盘</span>
+    </div>
+</div>
+<article class="form_cells">
+    <selection class="form_cell">
+        <div class="form_title">大厦信息</div>
+        <ul class="form_list">
+            <li class="form_li"><span class="form_t">商圈：</span><input type="text" placeholder="浦东-八佰伴" class="form_inp">
+            </li>
+            <li class="form_li"><span class="form_t">物业：</span><input type="text" placeholder="上海浦江物业有限公司"
+                                                                      class="form_inp"></li>
+            <li class="form_li"><span class="form_t">层数：</span><input type="text" placeholder="23层" class="form_inp">
+            </li>
+            <li class="form_li"><span class="form_t">层高：</span><input type="text" placeholder="标准4.5米，净高2.75米，大堂14.5米"
+                                                                      class="form_inp"></li>
+            <li class="form_li"><span class="form_t">车位：</span><input type="text" placeholder="地上30个，地下400个，1250元/月"
+                                                                      class="form_inp"></li>
+            <li class="form_li"><span class="form_t">电梯：</span><input type="text" placeholder="客梯8部，货梯2部，三菱电梯"
+                                                                      class="form_inp"></li>
+            <li class="form_li"><span class="form_t">空调：</span><input type="text" placeholder="集中式中央空调"
+                                                                      class="form_inp"></li>
+            <li class="form_li1"><span class="form_t">入驻企业：</span><input type="text" placeholder="顺城商业地产（房地产/建筑），大大集团"
+                                                                         class="form_inp"></li>
+            <li class="form_li"><span class="form_t">地铁：</span><input type="text" placeholder="距离世纪大道站步行7分钟"
+                                                                      class="form_inp"></li>
+        </ul>
+    </selection>
+</article>
+<article class="form_cells1">
+    <selection class="form_cell1">
+        <div class="form_title">房源信息</div>
+        <div class="form_txt">请选择发布房源的属性</div>
+        <div class="radio_box">
+            <div class="radio_block selected"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>整层</span>
+            </div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>整栋</span></div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>众创空间</span></div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>商务中心</span></div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>创意产业园</span></div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>写字楼</span></div>
+            <div class="radio_block"><span class="radio_btn"><i class="icon">&nbsp;</i></span><span>工位</span></div>
+        </div>
+        <div class="select_form">
+            <ul class="select_form_list">
+                <li class="select_form_li">
+                    <span class="select_form_title">房源面积</span>
+                    <input class="select_form_inp" type="text" placeholder="20">
+                    <span class="select_form_last">m<sup>2</sup></span>
+                </li>
+                <li class="select_form_li">
+                    <span class="select_form_title">房源单价</span>
+                    <input class="select_form_inp" type="text" placeholder="65">
+                    <span class="select_form_last">元/m<sup>2</sup>/天</span>
+                </li>
+
+                <li class="select_form_li1">
+                    <span class="select_form_title1">交付状态</span>
+                    <input class="select-title" type="text" placeholder="标准交付" data-val="1" class="select_form_inp">
+                    <ul class="select-list">
+                        <li class="select-li" data-val="1">标准交付</li>
+                        <li class="select-li" data-val="2">毛坯交付</li>
+                        <li class="select-li" data-val="3">简装</li>
+                        <li class="select-li" data-val="4">豪装</li>
+                    </ul>
+                </li>
+                <li class="select_form_li">
+                    <span class="select_form_title">交付日期</span>
+                    <input class="select_form_inp" type="text" placeholder="2015-06-21">
+                    <span class="radio_btn"><i class="icon">&nbsp;</i></span><span class="select_form_last1">是否现房</span>
+                </li>
+
+                <li class="select_form_li2">
+                    <span class="select_form_title">最短租期</span>
+                    <input class="select-title" type="text" placeholder="3年" data-val="">
+                </li>
+                <li class="select_form_li2">
+                    <span class="select_form_title">付款方式</span>
+                    <input class="select_form_inp" type="text" placeholder="押三付一" data-val="">
+                    <span class="radio_btn"></span><span class="select_form_last1">是否含发票</span>
+                </li>
+                <li class="select_form_li2">
+                    <span class="select_form_title">是否结佣</span>
+                    <input class="select_form_inp" type="text" placeholder="一个月" data-val="">
+                    <span class="radio_btn"></span><span class="select_form_last1">是</span>
+                </li>
+                <li class="select_form_li2">
+                    <span class="select_form_title">装修免租</span>
+                    <input class="select-title" type="text" placeholder="一个月" data-val="">
+                </li>
+                <li class="select_form_li2">
+                    <span class="select_form_title">看房时间</span>
+                    <input class="select_form_inp1" type="text" placeholder="8:00" data-val="">
+                    <input class="select_form_inp1" type="text" placeholder="20:00" data-val="">
+                </li>
+                <li class="select_form_li2">
+                    <span class="select_form_title">房源简介</span>
+                    <span  class="select-txt" >房源简介</span>
+                </li>
+            </ul>
+        </div>
+        <div class="footer">
+            <div class="footer_img">
+                <span class="footer_txt">添加图片</span>
+            </div>
+        </div>
+    </selection>
+</article>
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="../../public/libs/zepto/touch.js"></script>
+<script src="../../public/js/publish/release.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+$orange=#ED6928
+body
+  background-color #efefef
+  font-family SimHei
+.tab_box
+  height 32px
+  padding 9px 0
+  background-color #FFFFFF
+  .tab_bar
+    display flex
+    width 80%
+    height 30px
+    margin 0 auto
+    padding 0
+    list-style none
+    border-radius 5px
+    border 1px solid $orange
+    color $orange
+    .tab_bar-cell
+      position relative
+      flex 1
+      line-height 30px
+      text-align center
+      &:after
+        content ''
+        position: absolute
+        top 0
+        right 0
+        display block
+        width 1px
+        height 30px
+        background-color $orange
+      &:last-child:after
+        content ''
+        display none
+      &.active
+        background-color $orange
+        color #fff
+.demand_cells
+  padding 15px
+
+.demand_cell
+  width 100%
+  min-height 50px
+  border-radius 5px
+  box-shadow 0 0 1px 1px #e0e0e0
+  line-height 30px
+  background-color #fff
+  margin-bottom 10px
+  .demand-title
+    display flex
+    height 50px
+    padding 0 10px
+    border-bottom 1px dashed #cecece
+    line-height 50px
+    font-size 1.2rem
+    .d-t-name
+      flex 1
+  .demand-info
+    margin 0
+    letter-spacing 0rem
+    line-height 1.8rem
+    color #9D9D9D
+    font-size 0.9rem
+    text-indent 2rem
+  .demand-footer
+    display flex
+    height 30px
+    padding 10px
+    line-height 30px
+    .text-time
+      flex 1
+      font-size 0.8rem
+      font-style normal
+      text-align right
+      color #ccc
+footer.bottom-list
+  width 100%
+  padding 2% 0
+  border-top 1px solid #d6d7dc
+  background-color #FFFFFF
+  position fixed
+  bottom 0
+  display flex
+  .bottom-column
+    text-align center
+    flex 1
+    img
+      width 22px
+    img.add-img
+      width 42px
+    p
+      margin 0
+      font-size 0.8rem
+      color #b4b4b4
+    p.active
+      color $orange
+      position relative
+      &:after
+        content '3'
+        color #FFFFFF
+        width 15px
+        height 15px
+        border-radius 50%
+        text-align center
+        line-height 15px
+        background-color #ec461f
+        position absolute
+        display block
+        top -27px
+        left 42px
+
+
+
+
+
