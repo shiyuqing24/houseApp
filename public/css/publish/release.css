@@ -363,34 +363,14 @@ body {
   border-radius: 5px;
   font-size: 0.8rem;
 }
-.form_cells1 .form_cell1 .footer {
-  padding: 15px;
-}
-.form_cells1 .form_cell1 .footer .footer_img {
-  width: 100px;
-  height: 100px;
-  background-color: #efefef;
+.form_cells1 .form_cell1 .select_form .footer {
+  width: 75px;
+  height: 25px;
+  background: url("../../image/publish/content_icon_plus@2x.png") no-repeat center 20px #d4d4d9;
+  background-size: 20px 20px;
+  text-align: center;
+  padding-top: 50px;
+  color: #646464;
+  margin-top: 20px;
   position: relative;
-}
-.form_cells1 .form_cell1 .footer .footer_img:before,
-.form_cells1 .form_cell1 .footer .footer_img:after {
-  content: '';
-  position: absolute;
-  top: 36px;
-  left: 36px;
-  width: 25px;
-  height: 2px;
-  background-color: #6c6c6c;
-  transform: rotate(90deg);
-}
-.form_cells1 .form_cell1 .footer .footer_img:after {
-  right: 15px;
-  transform: rotate(180deg);
-}
-.form_cells1 .form_cell1 .footer .footer_img .footer_txt {
-  font-size: 0.8rem;
-  position: absolute;
-  bottom: 30px;
-  left: 22px;
-  color: #6c6c6c;
 }

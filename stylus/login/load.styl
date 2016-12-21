@@ -52,7 +52,7 @@ body
      &:after
        content ''
        position absolute
-       top 100px
+       top 90px
        left 20px
        z-index 5
        display block
@@ -73,16 +73,20 @@ body
        height 40px
        margin-top 20px
        padding 0 15px
-       .bt_login
-         display block
-         width 100%
-         height 40px
-         border none
-         border-radius 5px
-         background-color #c7c7c7
-         color #fff
-         line-height 40px
-         font-size 1.1rem
+      button
+        border none
+        border-radius 5px
+      .bt_login
+        padding 3% 0
+        width 96%
+        color #ffffff
+        background #c7c7c7
+        height 40px
+        margin-bottom 5%
+        &.active
+          border none
+          width 96%
+          background-color  $orange
        .bt_reg
          padding-left 10px
          color $orange

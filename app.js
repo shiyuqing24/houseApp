@@ -46,8 +46,8 @@ app.get('login', function (req, res) {
 
 
 /*监听端口9999， 用来启用服务*/
-app.listen(9999, function () {
-    console.log("server tun at port 9999")
+app.listen(16938, function () {
+    console.log("server tun at port 16938")
 });
 
 /*模块导出*/
