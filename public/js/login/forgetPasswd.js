@@ -18,12 +18,12 @@ window.onkeyup=function () {
     if (nameVal != '' && markVal != '' && passVal != '' && passWval != ''&&c<60) {
         btnLogin.setAttribute('disabled',false);
         btnLogin.style.background = '#EA5404'
-
     }
     else {
         btnLogin.setAttribute('disabled',true);
         btnLogin.style.background = '#c7c7c7'
     }
+
 };
 var time=60;
 var c=time;
@@ -41,4 +41,9 @@ function timeCount(){
         clearTimeout(t)
     }
     return c
+}
+var btnLogin = document.getElementById('btn_login');
+console.log(btnLogin)
+function a(){
+    console.log(btnLogin.getAttribute('disabled'))
 }

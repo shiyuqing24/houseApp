@@ -27,7 +27,8 @@ window.onkeyup = function () {
     var markVal = mark.value;
     var passVal = pass.value;
     var passWval = passW.value;
-    var personVal=person.value;
+    var personVal=person.innerText;
+    console.log(personVal)
     if (nameVal != '' && markVal != '' && passVal != '' && passWval != ''&&personVal!=''&&c<60) {
         btnLogin.setAttribute('disabled',false);
         btnLogin.style.background = '#EA5404'
