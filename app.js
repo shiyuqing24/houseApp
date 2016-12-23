@@ -12,7 +12,10 @@ var proxy = require('http-proxy-middleware')
 
 /*定义通过API 访问请求，转发到指定路径*/
 app.use('/api', proxy({
-    target: 'http://122.10.30.153:9901',
+    target: 'http://guanjp.com:9805',
+    changeOrigin:true,
+    ws:true,
+    cookieRewrite:true,
     pathRewrite: {
         '^/api':'/'
     }
