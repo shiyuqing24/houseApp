@@ -1,33 +1,26 @@
-$orange=#ed692b
-*
-  outline none/*outline-style 属性用于设置元素的整个轮廓的样式,none定义无轮廓*/
 body
   margin 0
   padding 0
-  background-color #EFEFEF
-  font-family SimHei
-.header
+  background #efefef
+  font-size 14px
+header
   height 35px
-  background-color #fff
+  background #ffffff
   line-height 35px
-  .icon-back
-    position absolute
-    top 0
-    left 10px
-    display inline-block
-    width 35px
-    height 35px
-    line-height 35px
-    background-size 10px 16px
-  .header-title
-    text-align center
-    display inline-block
-    width 100%
-  .icon_right
-    position absolute
-    right 10px
-    top 0px
-    color $orange
+  text-align center
+  font-size 18px
+  font-weight bold
+  border-bottom  1px solid #d6d7dc
+  .con
+    padding 0 3%
+    span
+      font-size 14px
+      font-weight 400
+      &:nth-child(1)
+        float left
+      &:nth-child(2)
+        float right
+        color #ea5404
 article
   padding 10px 8%
   input

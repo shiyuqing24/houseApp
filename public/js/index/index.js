@@ -210,7 +210,7 @@ $icons.on("click",function(){
 /*list icon-back-->details*/
 var $lists = $(".list .icon-back");
 $lists.on("click",function(){
-    location.href = "details.html";
+    location.href = "heade.html";
 });
 
 /*publish*/

@@ -1,0 +1,1 @@
+var $phone=$("article .icon-back"),$phoneBox=$(".hid"),$btns=$(".hid .btn");$phone.on("click",function(){$phoneBox.show()}),$btns.on("click",function(){$phoneBox.hide()});

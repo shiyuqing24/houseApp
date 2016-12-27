@@ -21,5 +21,5 @@ $btn2.on("tap",function(){
     location.href='../index/index.html'
 });
 $confirm.on("tap",function(){
-    location.href='../person/demand.html'
+    location.href='../mine/edit.html'
 });

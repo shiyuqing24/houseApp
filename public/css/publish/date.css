@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-size: 14px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  height: 35px;
+  background: #fff;
+  line-height: 35px;
+  position: relative;
+}
+header .icon-back {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  display: inline-block width 30px;
+  width: 30px;
+  height: 30px;
+  background: url("../../image/login/nav_back_icon@2x.png") no-repeat center;
+  background-size: 12px 18px;
+}
+header .header_title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+header .confirm {
+  color: #ea5404;
+  display: block;
+  position: absolute;
+  right: 3%;
+  top: 0;
+}
+article .t-title {
+  color: #b4b4b4;
+  height: 35px;
+  line-height: 35px;
+  padding-left: 3%;
+}
+article .icon {
+  height: 42px;
+  background: url("../../image/publish/content_img_user@2x.png") no-repeat 3% center #fff;
+  background-size: 40px 40px;
+  padding: 13px 0 0 15%;
+  position: relative;
+}
+article .icon span {
+  display: block;
+  color: #646464;
+}
+article .icon span:nth-child(1) {
+  color: #323232;
+}
+article .icon .icon-back {
+  display: block;
+  height: 18px;
+  width: 38px;
+  background: url("../../image/publish/content_icon_call@2x.png") no-repeat 20px center;
+  background-size: 18px 18px;
+  position: absolute;
+  right: 5%;
+  top: 18px;
+}
+article .info {
+  background: #fff;
+  padding: 3%;
+  height: 60px;
+}
+article .info span {
+  display: block;
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  color: #646464;
+  line-height: 20px;
+}
+article .info span.title {
+  font-size: 14px;
+  color: #323232;
+  width: 100%;
+}
+article .date {
+  background: #fff;
+  padding: 0 3%;
+  height: 45px;
+  line-height: 45px;
+}
+article .status {
+  padding-left: 3%;
+  background: #fff;
+}
+article .status li {
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #d6d7dc;
+}
+article .status li span {
+  display: block;
+}
+article .status li span:nth-child(1) {
+  line-height: 20px;
+  float: left;
+}
+article .status li span:nth-child(2) {
+  float: right;
+  margin-right: 3%;
+}
+article .dates {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  border: none;
+  outline: none;
+  width: 100%;
+  text-indent: 20em;
+}
+.hid {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.2);
+}
+.hid .box {
+  width: 72%;
+  height: 110px;
+  background: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 14%;
+  top: 50%;
+  margin-top: -55px;
+}
+.hid .box .text {
+  display: inline-block;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  text-align: center;
+  border-bottom: 1px solid #d6d7dc;
+}
+.hid .box .btn {
+  color: #ea5404;
+  height: 40px;
+  line-height: 40px;
+  width: 48%;
+  border: none;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  background-color: #fff;
+}
+.hid .box .btn.cancel {
+  color: #323232;
+}
+.hid .box .confirms {
+  margin-left: 26%;
+}

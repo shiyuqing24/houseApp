@@ -22,6 +22,6 @@ $cancel.on("click",function(){
 });
 $con.on("click",function(){
     var date = $date.val();
-    location.href = 'details.html';
+    location.href = 'edit.html';
     //console.log(date)
 });

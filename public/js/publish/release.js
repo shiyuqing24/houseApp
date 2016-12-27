@@ -1,31 +1,68 @@
 /**
  * Created by Administrator on 2016/12/17 0017.
  */
-/*单选 选择框*/
+/*取消和发布*/
+var　$hid = $(".hid");
+var $cancel = $(".cancel");
+var $publish = $(".publish");
+var $btn1 = $(".hid .btn1");
+var $btn2 = $(".hid .btn2");
+var $confirm = $(".hid .confirm");
+$cancel.on("tap",function(){
+    $hid.eq(0 ).show()
+});
+$publish.on("tap",function(){
+    $hid.eq(1 ).show()
+});
+$btn1.on("tap",function(){
+    $hid.eq(0).hide();
+});
+$btn2.on("tap",function(){
+    location.href='../index/index.html'
+});
+$confirm.on("tap",function(){
+    location.href='../mine/pull.html'
+});
 
-var $radioList=$('.radio_box .radio_block');
-$radioList.on('tap',function(){
-    var $self=$(this);
-    if(!$self.hasClass('selected')){
-        $radioList.removeClass('selected');
-        $self.addClass('selected')
+/*search跳转*/
+var $search = $(".search");
+var $searchBox = $(".search-box");
+var $cancel2 = $(".cancel2");
+var $lis = $(".search-box li");
+var $search1 = $(".search1")[0];
+$search.on("tap",function(){
+    $searchBox.show();
+});
+$cancel2.on("tap",function(){
+    $searchBox.hide();
+    $search1.value="";
+});
+$lis.on("tap",function(){
+    $search1.value = this.innerHTML;
+    setTimeout(function(){
+        $searchBox.hide();
+        $search1.value = "";
+    },500);
+});
+
+/*单选*/
+var $radios = $(".select li");
+var $str = $radios.find("i");
+var $radios2 = $("table .icon-back");
+
+$radios.on("click",function(){
+    var index = $(this).index();
+    $str.each(function(i){
+        $str.eq(i ).removeClass("active");
+        $str.eq(index).addClass("active");
+    })
+});
+
+$radios2.on("click",function(){
+    var $self =$(this );
+    if($self.hasClass("active")){
+        $self.removeClass("active");
+    }else{
+        $self.addClass("active");
     }
-});
-/*下拉选择框*/
-var $selectTitle=$('.select-title');
-var $selectList=$('.select-list');
-$selectTitle.on('tap',function(){
-    //siblings() 获得匹配集合中每个元素的同胞，通过选择器进行筛选是可选的。
-    //toggle() 方法切换元素的可见状态
-    $(this).siblings('.select-list').toggle();
-});
-
-$selectList.find('.select-li').on('tap',function(){
-    var $self=$(this);
-    var $parent=$self.parent('.select-list');
-    var text=$self.text();
-    //var val=$self.data('val');//data() 方法向被选元素附加数据，或者从被选元素获取数据。
-    console.log(text)
-    $(".select-title").val(text);
-    $parent.hide();
 });

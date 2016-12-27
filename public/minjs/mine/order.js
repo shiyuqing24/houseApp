@@ -1,0 +1,1 @@
+var $icons=$(".list .icon-back");$icons.on("tap",function(){location.href="editDetails.html"});

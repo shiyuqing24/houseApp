@@ -16,7 +16,7 @@ function test(){
         confirmClass = confirmClass.concat(" active");
         confirm.setAttribute("class","confirm active" );
         confirm.onclick=function(){
-            location.href = 'forget-success.html';
+            location.href = 'forgetSuccess.html';
         };
     }
 }

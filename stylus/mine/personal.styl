@@ -13,26 +13,43 @@ header
     width 100%
     text-align center
     color #5c5c5c
+    font-size 16px
+    font-weight  bold
   .icon-back
     position absolute
     top 2px
     right 5px
     display inline-block
-    width 30px
-    height 30px
+    width 25px
+    height 25px
     background  url("../../image/person/nav_set_icon@2x.png") no-repeat center
-    background-size 18px 18px
+    background-size 16px 16px
 .login
   width 100%
   height 130px
   background #ffffff
   .icon-back1
-    display inline-block
+    width 64px
+    height 64px
+    background url('../../image/person/pic.jpg') no-repeat center
+    background-size cover
     position absolute
-    width 60px
-    height 60px
-    margin 10px 20px
-    background url("../../image/person/log-in_member_icon@2x.png") no-repeat 30px 30px, url("../../image/person/pic.jpg") no-repeat center
+    left 15px
+    border-radius 50%
+    display inline-block
+    top 8%
+    &:after
+      content ''
+      width 36px
+      height 36px
+      background url('../../image/person/log-in_member_icon@2x.png') no-repeat center
+      background-size 18px
+      position absolute
+      left 40px
+      top 35px
+
+
+
   .info
     line-height 30px
     padding 10px 90px
@@ -44,10 +61,11 @@ header
     .info-text
       color #666
       font-weight 600
+      font-size 12px
       &:after
         content ''
         background url("../../image/person/log-in_edit_icon@2x.png") no-repeat center
-        background-size 20px 20px
+        background-size 14px 14px
         width 20px
         height 20px
         display block
@@ -106,11 +124,11 @@ header
         right 20px
         top 10px
     &.l2
-      background url("../../img/my/content_list_icon02@2x.png") no-repeat 10px center #fff;
+      background url("../../image/person/content_list_icon02@2x.png") no-repeat 10px center #fff;
       background-size 20px 20px
       &:after
         content ''
-        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        background url("../../image/person/content_list_right_icon@2x.png") no-repeat center
         width 20px
         height 20px
         display block
@@ -118,11 +136,11 @@ header
         right 20px
         top 75px
     &.l3
-      background url("../../img/my/content_list_icon05@2x.png") no-repeat 10px center #fff;
+      background url("../../image/person/content_list_icon03@2x.png") no-repeat 10px center #fff;
       background-size 20px 20px
       &:after
         content ''
-        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        background url("../../image/person/content_list_right_icon@2x.png") no-repeat center
         width 20px
         height 20px
         display block
@@ -130,11 +148,11 @@ header
         right 20px
         top 135px
     &.l4
-      background url("../../img/my/content_list_icon03@2x.png") no-repeat 10px center #fff;
+      background url("../../image/person/content_list_icon04@2x.png") no-repeat 10px center #fff;
       background-size 20px 20px
       &:after
         content ''
-        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        background url("../../image/person/content_list_right_icon@2x.png") no-repeat center
         width 20px
         height 20px
         display block
@@ -142,11 +160,11 @@ header
         right 20px
         top 195px
     &.l5
-      background url("../../img/my/content_list_icon04@2x.png") no-repeat 10px center #fff;
+      background url("../../image/person/content_list_icon05@2x.png") no-repeat 10px center #fff;
       background-size 20px 20px
       &:after
         content ''
-        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        background url("../../image/person/content_list_right_icon@2x.png") no-repeat center
         width 20px
         height 20px
         display block
@@ -173,20 +191,20 @@ footer
       &:hover
         color #ea5404
       &.f1
-        background url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat center 0
+        background url("../../image/index/bottom_nor_icon04@2x.png") no-repeat center 0
         background-size 22px 22px
       &.f2
-        background url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat center 0
+        background url("../../image/index/bottom_nor_icon03@2x.png") no-repeat center 0
         background-size 22px 22px
       &.f3
-        background url("../../img/footer/bottom_icon05@2x.png") no-repeat center 0
+        background url("../../image/index/bottom_icon05@2x.png") no-repeat center 0
         background-size 44px 44px
       &.f4
-        background url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat center 0
+        background url("../../image/index/bottom_nor_icon02@2x.png") no-repeat center 0
         background-size 22px 22px
         position relative
       &.f5
-        background url("../../img/footer/bottom_press_icon01@2x.png") no-repeat center 0
+        background url("../../image/index/bottom_press_icon01@2x.png") no-repeat center 0
         background-size 22px 22px
         color #ea5404
 .publish
@@ -208,7 +226,7 @@ footer
       height 95px
       border-radius 50%
       float left
-      background url("../../img/publish/publish_btn02@2x.png") no-repeat center
+      background url("../../image/index/publish_btn022@2x.png") no-repeat center
       background-size 95px 95px
       position relative
       span
@@ -219,14 +237,15 @@ footer
         bottom -25px
         color: #ffffff
       &.right
-        background url("../../img/publish/publish_btn01@2x.png") no-repeat center
+        background url("../../image/index/publish_btn011@2x.png") no-repeat center
         background-size 95px 95px
         margin-left 16%
   .bottom
     height 60px
-    background url("../../img/publish/publish_close_icon@2x.png") no-repeat center #242221
+    background url("../../image/index/publish_close_icon@2xx.png") no-repeat center #242221
     background-size 16px 16px
     position fixed
     bottom 0
     width 100%
+
 

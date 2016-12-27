@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+  font-size: 14px;
+}
+header {
+  height: 35px;
+  background: #fff;
+  line-height: 35px;
+  margin-bottom: 10px;
+}
+header .header_title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #5c5c5c;
+}
+header .icon-back {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../../image/person/nav_set_icon@2x.png") no-repeat center;
+  background-size: 16px 18px;
+}
+.login {
+  width: 100%;
+  height: 130px;
+  background: #fff;
+}
+.login .icon-back1 {
+  display: inline-block;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  padding-left: 20px;
+  background: url("../../image/person/log in_user-head@2x.png") no-repeat center;
+  background-size: 70px 70px;
+}
+.login .text {
+  line-height: 70px;
+  padding-left: 90px;
+  font-size: 14px;
+}
+.login .text:after {
+  content: '';
+  background: url("../../image/person/log in_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 75px;
+}
+.login .box {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+  border-top: 1px solid #d6d7dc;
+}
+.login .box div {
+  float: left;
+  width: 49%;
+  height: 34px;
+  margin-top: 3px;
+  text-align: center;
+  padding: 10px auto;
+  color: #999;
+}
+.login .box div.s1 {
+  border-right: 1px solid #d6d7dc;
+}
+.login .box div .count {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+}
+.list {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.list li {
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+  padding-left: 40px;
+  width: 90%;
+}
+.list li.l1 {
+  background: url("../../image/person/content_list_icon01@2x.png") no-repeat 10px center #fff;
+  background-size: 20px 20px;
+}
+.list li.l1:after {
+  content: '';
+  background: url("../../image/person/content_list_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.list li.l2 {
+  background: url("../../image/person/content_list_icon02@2x.png") no-repeat 10px center #fff;
+  background-size: 20px 20px;
+}
+.list li.l2:after {
+  content: '';
+  background: url("../../image/person/content_list_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 75px;
+}
+.list li.l3 {
+  background: url("../../image/person/content_list_icon03@2x.png") no-repeat 10px center #fff;
+  background-size: 20px 20px;
+}
+.list li.l3:after {
+  content: '';
+  background: url("../../image/person/content_list_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 135px;
+}
+.list li.l4 {
+  background: url("../../image/person/content_list_icon04@2x.png") no-repeat 10px center #fff;
+  background-size: 20px 20px;
+}
+.list li.l4:after {
+  content: '';
+  background: url("../../image/person/content_list_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 195px;
+}
+.list li.l5 {
+  background: url("../../image/person/content_list_icon05@2x.png") no-repeat 10px center #fff;
+  background-size: 20px 20px;
+}
+.list li.l5:after {
+  content: '';
+  background: url("../../image/person/content_list_right_icon@2x.png") no-repeat center;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 255px;
+}
+footer {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  float: left;
+  width: 16%;
+  height: 20px;
+  padding: 2%;
+  color: #999;
+  text-align: center;
+  padding-top: 30px;
+}
+footer ul li:hover {
+  color: #ea5404;
+}
+footer ul li.f1 {
+  background: url("../../image/msg/bottom_nor_icon04@2x.png") no-repeat center 0;
+  background-size: 22px 22px;
+}
+footer ul li.f2 {
+  background: url("../../image/msg/bottom_nor_icon03@2x.png") no-repeat center 0;
+  background-size: 22px 22px;
+}
+footer ul li.f3 {
+  background: url("../../image/msg/bottom_icon05@2x.png") no-repeat center 0;
+  background-size: 44px 44px;
+}
+footer ul li.f4 {
+  background: url("../../image/msg/bottom_nor_icon02@2x.png") no-repeat center 0;
+  background-size: 22px 22px;
+  position: relative;
+}
+footer ul li.f5 {
+  background: url("../../image/msg/bottom_press_icon01@2x.png") no-repeat center 0;
+  background-size: 22px 22px;
+  color: #ea5404;
+}

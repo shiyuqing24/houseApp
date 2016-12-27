@@ -14,7 +14,7 @@ function test(){
         loginClass = loginClass.concat(" active");
         login.setAttribute("class","login active" );
         login.onclick=function(){
-            location.href = '../my/login-success.html';
+            location.href = '../mine/personal.html';
         };
     }
 }
