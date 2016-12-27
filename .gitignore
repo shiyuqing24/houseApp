@@ -2,3 +2,9 @@ node_modules/
 .idea/
 APP切图/
 效果图/
+.vscode/
+.project/
+*.exe
+*.log
+logs/
+*.bak

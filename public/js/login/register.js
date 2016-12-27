@@ -1,61 +1,62 @@
 /**
- * Created by Administrator on 2016/12/16 0016.
+ * Created by Administrator on 2016/12/24 0024.
  */
-var $selectTitle = $('.form-cell-input');
-var $selectList = $('.select-list');
-$selectTitle.on('tap', function () {
-    $(this).siblings('.select-list').toggle();
+var $sf = $("#sf");
+var $hid_sf = $(".hid_sf");
+var $sflis = $(".hid_sf span");
+
+$sf.on("click",function(){
+    $hid_sf.show()
 });
-$selectList.find('.select-li').on('tap', function () {
-    var $self = $(this);
-    var $parent = $self.parent('.select-list');
-    var text = $self.text();
-    var val = $self.data('val');
-    console.log(text, val);
-    $parent.siblings('.form-cell-input').text(text).data('val', val);
-    $parent.hide();
+$sflis .on("click",function(){
+    $sf[0].innerHTML = this.innerHTML;
+    $hid_sf.hide();
 });
 
-window.onkeyup = function () {
-    var name = document.getElementById('name');
-    var mark = document.getElementById('mark');
-    var pass = document.getElementById('pass');
-    var passW = document.getElementById('passW');
-    var person = document.getElementById('person');
-    var btnLogin = document.getElementById('btn_login');
-    var nameVal = name.value;
-    var markVal = mark.value;
-    var passVal = pass.value;
-    var passWval = passW.value;
-    var personVal=person.innerText;
-    console.log(personVal)
-    if (nameVal != '' && markVal != '' && passVal != '' && passWval != ''&&personVal!=''&&c<60) {
-        btnLogin.setAttribute('disabled',false);
-        btnLogin.style.background = '#EA5404'
-        btnLogin.onclick=function(){
-            location.href='registerSuccess.html'
-        }
-    }
-    else {
-        btnLogin.setAttribute('disabled',true);
-        btnLogin.style.background = '#c7c7c7'
+setInterval(test,1000);
+function test(){
+    var name = $("#names" ).val();
+    var password = $("#psd" ).val();
+    var password2 = $("#psd2" ).val();
+    var mark =  $("#mark" ).val();
+    var register = $(".register" );
+    if(name =="" || password ==""||password2 ==""||mark ==""){
+        register.removeClass("active")
+    }else{
+        register.addClass("active");
+        var sf = $("#sf")[0].innerHTML;
+        var hid_sf = $(".hid_sf span");
+        register.on("click",function(){
+            hid_sf.each(function(){
+                var str = this.innerHTML;
+                var url = this.title;
+                if(str == sf){
+                    if (url != "") {
+                        open(url,'_self');
+                    }
+                }
+            })
+        })
     }
 }
+var wait=60;
+function time(o){
+    if (wait==0) {
+        o.removeAttribute("disabled");
+        o.innerHTML="获取验证码";
+        o.style.backgroundColor="#ed692b";
+        wait=60;
+    }else{
+        o.setAttribute("disabled", true);
 
-var time=60;
-var c=time;
-function timeCount(){
-    document.getElementById('btn_code').value=c;
-    document.getElementById('btn_code').disabled='disabled';
-    document.getElementById('btn_code').style.background='#c7c7c7';
-
-    c--;
-    t=setTimeout('timeCount()',1000);
-    if(c<0){
-        c=60;
-        document.getElementById('btn_code').value='发送验证码';
-        document.getElementById('btn_code').removeAttribute('disabled');
-        clearTimeout(t)
+        o.innerHTML=wait+"s后重新获取";
+        o.style.backgroundColor="#c7c7c7";
+        wait--;
+        setTimeout(function(){
+            time(o)
+        },1000)
     }
-    return c
 }
+document.getElementsByClassName("btn_mark")[0].onclick=function(){
+    time(this)
+};

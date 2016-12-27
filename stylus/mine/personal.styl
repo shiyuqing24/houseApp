@@ -1,0 +1,232 @@
+body
+  margin 0
+  padding 0
+  background #efefef
+  font-size 14px
+header
+  height 35px
+  background #ffffff
+  line-height 35px
+  margin-bottom 10px
+  .header_title
+    display inline-block
+    width 100%
+    text-align center
+    color #5c5c5c
+  .icon-back
+    position absolute
+    top 2px
+    right 5px
+    display inline-block
+    width 30px
+    height 30px
+    background  url("../../image/person/nav_set_icon@2x.png") no-repeat center
+    background-size 18px 18px
+.login
+  width 100%
+  height 130px
+  background #ffffff
+  .icon-back1
+    display inline-block
+    position absolute
+    width 60px
+    height 60px
+    margin 10px 20px
+    background url("../../image/person/log-in_member_icon@2x.png") no-repeat 30px 30px, url("../../image/person/pic.jpg") no-repeat center
+  .info
+    line-height 30px
+    padding 10px 90px
+    .text
+      display inline-block
+      width 100%
+      font-size 20px
+      font-weight bold
+    .info-text
+      color #666
+      font-weight 600
+      &:after
+        content ''
+        background url("../../image/person/log-in_edit_icon@2x.png") no-repeat center
+        background-size 20px 20px
+        width 20px
+        height 20px
+        display block
+        position absolute
+        left 155px
+        top 95px
+    &:after
+      content ''
+      background url("../../image/person/log in_right_icon@2x.png") no-repeat center
+      width 20px
+      height 20px
+      display block
+      position absolute
+      right 20px
+      top 75px
+  .box
+    width 100%
+    height 40px
+    line-height 40px
+    border-top 1px solid #d6d7dc
+    div
+      float left
+      width 49%
+      height 34px
+      margin-top 3px
+      text-align center
+      padding 10px auto
+      color #999
+      &.s1
+        border-right 1px solid #d6d7dc
+      .count
+        margin-right 10px
+        font-size 16px
+        color #000
+        font-weight bold
+.list
+  list-style none
+  padding 0
+  position relative
+  li
+    height 50px
+    line-height 50px
+    margin-bottom 10px
+    padding-left 40px
+    width 90%
+    &.l1
+      background url("../../image/person/content_list_icon01@2x.png") no-repeat 10px center #fff;
+      background-size 20px 20px
+      &:after
+        content ''
+        background url("../../image/person/content_list_right_icon@2x.png") no-repeat center
+        width 20px
+        height 20px
+        display block
+        position absolute
+        right 20px
+        top 10px
+    &.l2
+      background url("../../img/my/content_list_icon02@2x.png") no-repeat 10px center #fff;
+      background-size 20px 20px
+      &:after
+        content ''
+        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        width 20px
+        height 20px
+        display block
+        position absolute
+        right 20px
+        top 75px
+    &.l3
+      background url("../../img/my/content_list_icon05@2x.png") no-repeat 10px center #fff;
+      background-size 20px 20px
+      &:after
+        content ''
+        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        width 20px
+        height 20px
+        display block
+        position absolute
+        right 20px
+        top 135px
+    &.l4
+      background url("../../img/my/content_list_icon03@2x.png") no-repeat 10px center #fff;
+      background-size 20px 20px
+      &:after
+        content ''
+        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        width 20px
+        height 20px
+        display block
+        position absolute
+        right 20px
+        top 195px
+    &.l5
+      background url("../../img/my/content_list_icon04@2x.png") no-repeat 10px center #fff;
+      background-size 20px 20px
+      &:after
+        content ''
+        background url("../../img/my/content_list_right_icon@2x.png") no-repeat center
+        width 20px
+        height 20px
+        display block
+        position absolute
+        right 20px
+        top 255px
+footer
+  position fixed
+  right 0
+  left 0
+  bottom 0
+  background #fff
+  ul
+    list-style none
+    padding 0
+    li
+      float left
+      width 16%
+      height 20px
+      padding 2%
+      color #999
+      text-align center
+      padding-top 30px
+      &:hover
+        color #ea5404
+      &.f1
+        background url("../../img/footer/bottom_nor_icon04@2x.png") no-repeat center 0
+        background-size 22px 22px
+      &.f2
+        background url("../../img/footer/bottom_nor_icon03@2x.png") no-repeat center 0
+        background-size 22px 22px
+      &.f3
+        background url("../../img/footer/bottom_icon05@2x.png") no-repeat center 0
+        background-size 44px 44px
+      &.f4
+        background url("../../img/footer/bottom_nor_icon02@2x.png") no-repeat center 0
+        background-size 22px 22px
+        position relative
+      &.f5
+        background url("../../img/footer/bottom_press_icon01@2x.png") no-repeat center 0
+        background-size 22px 22px
+        color #ea5404
+.publish
+  position fixed
+  top 0
+  bottom 0
+  width 100%
+  z-index 10
+  display none
+  background rgba(0,0,0,0.9)
+  .con
+    width 100%
+    padding 0 16%
+    position fixed
+    bottom 110px
+    height 120px
+    .left,.right
+      width 95px
+      height 95px
+      border-radius 50%
+      float left
+      background url("../../img/publish/publish_btn02@2x.png") no-repeat center
+      background-size 95px 95px
+      position relative
+      span
+        display block
+        width 95px
+        text-align center
+        position absolute
+        bottom -25px
+        color: #ffffff
+      &.right
+        background url("../../img/publish/publish_btn01@2x.png") no-repeat center
+        background-size 95px 95px
+        margin-left 16%
+  .bottom
+    height 60px
+    background url("../../img/publish/publish_close_icon@2x.png") no-repeat center #242221
+    background-size 16px 16px
+    position fixed
+    bottom 0
+    width 100%
+

@@ -14,7 +14,7 @@
 </head>
 <body>
 <header class="header">
-    <span class="icon-back">取消</span>
+    <span class="icon-back" onclick="history.back()">取消</span>
     <span class="header-title">发布房源</span>
 </header>
 <div class="search_box">
@@ -123,7 +123,8 @@
             </ul>
         </div>
         <div class="footer">
-            <input type="file">添加图片
+            <input type="file" id="uploadImg">
+            <button id="uploadBtn" type="file">上传图片</button>
         </div>
     </selection>
 </article>
@@ -143,6 +144,14 @@
         <button class="btn confirm">确认</button>
     </div>
 </div>
+<script>
+    (function($){
+        $('#uploadImg').on('tap',function(){
+            var files=$('#uploadImg')[0].files;
+
+        })
+    })
+</script>
 
 <script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 <script src="../../public/libs/zepto/touch.js"></script>

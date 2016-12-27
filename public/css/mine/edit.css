@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #121211;
+  color: #fff;
+}
+body .banner {
+  height: 215px;
+  width: 100%;
+  background: url("../../image/person/banner_img@2x.png") no-repeat center;
+  background-size: 100% 215px;
+  position: relative;
+}
+body .banner .icon-top {
+  height: 25px;
+  width: 100%;
+  background: url("../../image/person/banner_img_shadow@2x.png") no-repeat center top;
+  background-size: 100% 25px;
+}
+body .banner .icon-top .icon-back {
+  width: 25px;
+  height: 25px;
+  display: block;
+  background: url("../../image/person/nav_back_icon@2x.png") no-repeat center;
+  background-size: 15px 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+body .banner .info {
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: 2%;
+  right: 2%;
+  font-size: 14px;
+}
+body .banner .info .price {
+  color: #ea5404;
+  font-size: 22px;
+}
+body .banner .info .index {
+  float: right;
+  font-size: 16px;
+}
+body .banner .info .index .in {
+  font-size: 22px;
+}
+.content {
+  padding: 10px;
+  position: absolute;
+  top: 215px;
+  bottom: 40px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.content td {
+  height: 40px;
+  line-height: 25px;
+  border-top: 1px solid #474743;
+}
+.content td:nth-child(1),
+.content td:nth-child(3) {
+  color: #707070;
+  font-size: 14px;
+  width: 24%;
+  padding-left: 2%;
+}
+.content td.t1 {
+  font-size: 12px;
+}
+.content td.t1 .num {
+  color: #ea5404;
+  font-size: 18px;
+}
+.content td.infos {
+  padding: 15px 0;
+}
+.btn {
+  width: 100%;
+  height: 40px;
+  background: #ea5404;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}

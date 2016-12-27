@@ -1,0 +1,1 @@
+$list=$(".list"),$list.on("swipeLeft",function(){var i=$(this).find(".del");i.show()}),$list.on("swipeRight",function(){var i=$(this).find(".del");i.hide()});

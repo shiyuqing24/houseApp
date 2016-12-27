@@ -22,3 +22,13 @@ body .copy {
   width: 100%;
   color: #999;
 }
+body .box {
+  margin-top: 90%;
+  margin-left: 18%;
+  color: #6c6c6c;
+}
+body .box #send {
+  margin-left: 30%;
+  border: none;
+  color: #6c6c6c;
+}

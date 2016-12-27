@@ -1,168 +1,125 @@
-* {
-  outline: none;
-}
 body {
-  background-color: #efefef;
-  font-family: SimHei;
+  margin: 0;
+  padding: 0;
+  background: #efefef;
 }
-.header {
+header {
   height: 35px;
-  background-color: #fff;
+  background: #fff;
   line-height: 35px;
 }
-.header .icon-back {
+header .icon-back {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 2px;
+  left: 5px;
   display: inline-block;
-  width: 35px;
-  height: 35px;
-  background: url("../../image/login/nav_back_icon@2x.png") no-repeat center;
+  width: 30px;
+  height: 30px;
+  background: url("../../img/login/nav_back_icon@2x.png") no-repeat center;
   background-size: 12px 18px;
 }
-.header .header_title {
+header .header_title {
   display: inline-block;
   width: 100%;
-  color: #ed692b;
   text-align: center;
+  color: #ed692b;
 }
 .form-list {
-  margin-top: 15px;
-  padding-right: 15px;
+  width: 100%;
+  height: 200px;
+  margin-top: 5%;
   background: #fff;
 }
 .form-list .form-cell {
-  position: relative;
   display: flex;
   height: 40px;
   line-height: 40px;
-}
-.form-list .form-cell-name {
-  display: inline-block;
-  padding-left: 40px;
-}
-.form-list .form-cell-name.cell-name {
-  width: 50px;
-  background: url("../../image/login/content_ID_icon@2x.png") no-repeat left 10px center;
-  background-size: 25% 50%;
-}
-.form-list .form-cell-name.cell-code {
-  width: 68px;
-  background: url("../../image/login/content_verify_icon@2x.png") no-repeat left 12px center;
-  background-size: 16px 50%;
-}
-.form-list .form-cell-name.cell-passwd {
-  background: url("../../image/login/content_password_icon@2x.png") no-repeat left 12px center;
-  background-size: 16px 50%;
-}
-.form-list .form-cell-name.cell-status {
-  background: url("../../image/login/content_position_icon@2x.png") no-repeat left 12px center;
-  background-size: 20px 50%;
-}
-.form-list .form-cell-name.cell-next {
-  background: url("../../image/login/content_list_icon01@3x.png") no-repeat center;
-  background-size: 14px 8px;
-}
-.form-list .form-cell .select-list {
-  display: none;
-  position: absolute;
-  top: 30px;
-  right: 0;
-  z-index: 5;
-  border: 1px solid #cecece;
-  border-radius: 5px;
-  background-color: #efefef;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.form-list .form-cell .select-list .select-li {
   position: relative;
-  height: 40px;
-  padding: 0 10px;
-  line-height: 40px;
+  border-bottom: 1px solid #efefef;
 }
-.form-list .form-cell .select-list .select-li:after {
-  content: '';
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 10px;
+.form-list .form-cell .form-cell-name {
   display: block;
-  height: 1px;
-  background-color: #cecece;
+  width: 70px;
+  padding-left: 40px;
+  background: url("../../image/login/content_ID_icon@2x.png") no-repeat 10px center;
+  background-size: 18px 50%;
 }
-.form-list .form-cell .select-list .select-li:last-child:after {
-  display: none;
+.form-list .form-cell .form-cell-name.form-cell-mark {
+  background: url("../../image/login/content_verify_icon@2x.png") no-repeat 10px center;
+  background-size: 18px 50%;
+}
+.form-list .form-cell .form-cell-name.form-cell-password {
+  background: url("../../image/login/content_password_icon@2x.png") no-repeat 10px center;
+  background-size: 18px 50%;
+}
+.form-list .form-cell .form-cell-name.form-cell-sf {
+  background: url("../../image/login/content_position_icon@2x.png") no-repeat 10px center;
+  background-size: 18px 50%;
+}
+.form-list .form-cell .btn_mark {
+  background: #ed692b;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  height: 30px;
+  margin: 5px 0;
+  margin-right: 12px;
 }
 .form-list .form-cell .form-cell-input {
   flex: 1;
-}
-.form-list .form-cell .form-cell-input .fci-input {
-  height: 38px;
-  margin: 0;
-  padding: 0;
   border: none;
+  outline: none;
 }
-.form-list .form-cell:after {
-  content: '';
-  position: absolute;
-  bottom: -1px;
-  left: 10px;
-  z-index: 5;
-  display: block;
-  height: 1px;
-  width: 100%;
-  background-color: #efefef;
+.form-list .form-cell #sf {
+  color: #999;
+  width: 90%;
+  margin-right: 15px;
+  height: 36px;
+  background: url("../../img/index/content_icon02_nor@2x.png") right center no-repeat;
+  text-indent: 1em;
 }
-.fci-box {
-  display: flex;
-}
-.fci-box .input-box {
-  display: block;
-  flex: 1;
-}
-.fci-box .input-box .code_input {
-  width: 100%;
-  height: 38px;
-  border: none;
-}
-.fci-box #btn_code {
-  width: 4.5rem;
-  height: 25px;
-  margin-top: 9px;
-  padding: 4px 6px;
-  border-radius: 5px;
-  background-color: #ed692b;
+.form-list .form-cell .hid_sf {
+  display: none;
   color: #fff;
-  font-size: 12px;
-  line-height: 14px;
+  background-color: #a3a3a3;
+  width: 75px;
+  height: 155px;
   text-align: center;
-  border: none;
-  font-size: 0.5rem;
+  border-radius: 5px;
+  position: absolute;
+  right: 15px;
+  top: 25px;
 }
-.bt_box {
-  height: 40px;
-  margin-top: 20px;
-  padding: 0 15px;
-}
-.bt_box #btn_login {
+.form-list .form-cell .hid_sf span {
   display: block;
-  width: 100%;
-  height: 40px;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.btn_box {
+  padding-left: 3%;
+}
+.btn_box .register {
+  padding: 3% 0;
   border: none;
   border-radius: 5px;
-  background-color: #c7c7c7;
+  width: 96%;
   color: #fff;
-  font-size: 1.1rem;
-  line-height: 40px;
+  background: #c7c7c7;
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
-.bt_box .bt-reg {
-  color: #7a7a7c;
-  font-size: 12px;
-  margin-left: 50px;
+.btn_box .register.active {
+  background: #ea5404;
 }
-.bt_box .bt-passwd {
+.btn_box .btn-text {
+  display: inline-block;
+  width: 100%;
+  color: #707071;
+  font-size: 14px;
+  text-align: center;
+}
+.btn_box .btn-text a {
   color: #ed692b;
-  font-size: 12px;
 }
